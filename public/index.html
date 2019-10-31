@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>its_meow/Curse Point Estimator</title>
+    <meta charset="utf-8" />
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="keywords"
+      content="Minecraft,its_meow,mods,Better Animals Plus,ClaimIt,BA+,developer,itsmeow,forge,curse,points,curseforge"
+    />
+    <meta name="author" content="its_meow" />
+    <meta
+      name="description"
+      content="Estimates Curse Point earnings for projects"
+    />
+    <meta property="og:title" content="its_meow/Curse Point Estimator" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://itsmeow.dev/icon.png" />
+    <meta
+      property="og:url"
+      content="https://itsmeow.dev/curseestimate/index.html"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="its_meow/Curse Point Estimator" />
+    <meta
+      name="twitter:description"
+      content="Estimates Curse Point earnings for projects"
+    />
+    <meta name="twitter:image" content="https://itsmeow.dev/icon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-141623735-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-141623735-1");
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul class="header">
+          <li class="header"><a href="../index.html">Home</a></li>
+          <li class="header"><a href="../mods/index.html">Mods</a></li>
+          <script src="dropdown.js"></script>
+          <div class="header-dropdown" onclick="dropdown()">
+            <button id="dropbutton" class="header-dropdown-button">
+              Misc
+              <i class="caret-down"></i>
+            </button>
+          </div>
+          <div class="header-dropdown-content" id="main-dropdown">
+            <li class="dropdown-entry">
+              <a href="../cursedark/index.html">Curse Dark Theme</a>
+            </li>
+            <li class="dropdown-entry">
+              <a class="active" href="index.html">Curse Point Estimator</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <noscript>You need to enable JavaScript to run this app.</noscript>
+      <div id="root"></div>
+    </main>
+    <style>
+      footer {
+        position: absolute;
+        bottom: 0;
+      }
+    </style>
+    <footer>
+      <div class="footer-image-box">
+        <a href="../index.html"
+          ><img style="width:100%;height:100%;" src="modslogo.png"
+        /></a>
+      </div>
+      <div
+        style="max-height:6vw;float:right;margin-right:50px;overflow:hidden;"
+      >
+        <a
+          id="topfooter"
+          class="footerlink"
+          href="https://github.com/itsmeow/curseestimate"
+          target="_blank"
+          >Source code</a
+        >
+        <a class="footerlink" href="../index.html">Homepage</a>
+      </div>
+      <div class="footersection">
+        <p style="color:#777777;">
+          by its_meow - © 2019 - All Rights Reserved - Thanks for visiting!
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
