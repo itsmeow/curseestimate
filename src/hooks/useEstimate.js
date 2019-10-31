@@ -4,11 +4,14 @@ import { toast } from "react-toastify";
 export default function useEstimate(slug, onError = () => {}) {
   const [estimate, setEstimate] = useState();
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState();
+  const [error, setError] = useState(false);
+  const [note, setNote] = useState();
 
   useEffect(() => {
     const fetchEstimate = async () => {
       setLoading(true);
+      setError(null);
+
       let res;
       try {
         res = await fetch(
@@ -21,8 +24,9 @@ export default function useEstimate(slug, onError = () => {}) {
       if (res && res.ok) {
         const json = await res.json();
         if (json.status === "failed") {
-          onError(json.note);
-          setError(json.note);
+          onError(json);
+          setError(true);
+          setNote(json.note);
         } else {
           setError(false);
           setEstimate(json);
@@ -37,5 +41,5 @@ export default function useEstimate(slug, onError = () => {}) {
     }
   }, [slug]);
 
-  return { loading, error, estimate };
+  return { loading, error, note, estimate };
 }

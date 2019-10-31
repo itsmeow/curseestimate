@@ -10,7 +10,7 @@ import { toast } from "react-toastify";
 function App() {
   const [slug, setSlug] = useState();
 
-  const { loading, error, estimate } = useEstimate(slug, () => {
+  const { loading, error, note, estimate } = useEstimate(slug, () => {
     toast.error("Error getting points for mod");
   });
 
@@ -39,7 +39,7 @@ function App() {
         <>
           <h1>Error</h1>
           Unable to get data
-          <p>{error}</p>
+          <p>{note}</p>
         </>
       ) : (
         estimate && <Estimate data={estimate} />
