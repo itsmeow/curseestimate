@@ -5,7 +5,7 @@ import * as serviceWorker from "./serviceWorker";
 
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-toast.configure({ position: "bottom-left" });
+toast.configure({ position: "top-left" });
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
