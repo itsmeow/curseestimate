@@ -42,7 +42,7 @@ function Estimate(props) {
       <h3>
         {toCurrency.toFixed(3)} {currency}
       </h3>
-      <div style={{ width: "20%" }}>
+      <div style={{ width: "96px" }}>
         <Select
           styles={{
             option: (provided, state) => ({ ...provided, color: "black" })
