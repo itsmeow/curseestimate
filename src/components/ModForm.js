@@ -10,7 +10,7 @@ const ModForm = props => (
     <p>or slug or project url</p>
     <Formik
       initialValues={{ value: "" }}
-      onSubmit={(values, { setSubmitting }) => {
+      onSubmit={(values, { setSubmitting, resetForm }) => {
         if (values.value.match(URL_REGEX)) {
           let url = values.value;
 
@@ -23,6 +23,7 @@ const ModForm = props => (
           props.onSubmit(values.value);
         }
 
+        resetForm();
         setSubmitting(false);
       }}
     >
