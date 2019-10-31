@@ -28,10 +28,10 @@ const ModForm = props => (
     >
       {({ isSubmitting }) => (
         <Form>
-          <Field name="value" />
+          <Field className="high" type="text" name="value" />
           <ErrorMessage name="value" component="div" />
           <button type="submit" disabled={isSubmitting}>
-            Submit
+            Estimate
           </button>
         </Form>
       )}
