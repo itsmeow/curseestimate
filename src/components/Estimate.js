@@ -36,6 +36,9 @@ function Estimate(props) {
       <h1>Estimate for {slug}</h1>
       <p>Estimated daily points: </p>
       <h2>{points} pts</h2>
+      <p>
+        Error range: {margin.min} - {margin.max}
+      </p>
       <h3>
         {toCurrency.toFixed(3)} {currency}
       </h3>
