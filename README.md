@@ -1,6 +1,6 @@
 # Curse Estimate
 
-The frontend to use the [curse estimate API](https://curse-point-estimator.herokuapp.com/estimate/)
+The frontend to use the [curse estimate API](https://curse-point-estimator.herokuapp.com)
 
 Lets you get an estimate of how much point a project is generating daily
 
