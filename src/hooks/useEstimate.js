@@ -15,7 +15,7 @@ export default function useEstimate(slug, onError = () => {}) {
             let res;
             try {
                 res = await fetch(
-                    `https://curseestimate.itsmeow.dev/estimate/${slug}`
+                    `https://curseestimator.itsmeow.dev/estimate/${slug}`
                 );
             } catch (error) {
                 setError(error.message);
